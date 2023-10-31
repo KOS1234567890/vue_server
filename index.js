@@ -13,7 +13,7 @@ const client = new MongoClient(url);
 
 //전역변수 생성
 let collection;
-
+app.use(express.static('dist'));
 //서버 접근 방법
 const dbConnect =async ()=>{
     await client.connect();
